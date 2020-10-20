@@ -29,7 +29,7 @@ def main():
     expenses.read_expenses('data/spending_data.csv')
     for expense in expenses.list:
         myBudgetList.append(expense.amount)
-    expensesCount = str(len(myBudgetList.expenses))
+    expensesCount = str(len(myBudgetList))
     print('The count of all expenses: ' + expensesCount)
 
 
