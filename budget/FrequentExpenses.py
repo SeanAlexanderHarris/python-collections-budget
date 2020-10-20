@@ -13,8 +13,9 @@ expenses.read_expenses('data/spending_data.csv')
 spending_categories = []
 
 for expense in expenses.list:
-    print(expense.vendor)
     spending_categories.append(expense.category)
+
+print(spending_categories)
 
 # initialize a spending counting object & grab the top 5 categories (dictionary)
 spending_counter = collections.Counter(spending_categories)
